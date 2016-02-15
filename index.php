@@ -55,7 +55,8 @@
         <input type="radio" name="number" value="oneAfter"> One (After) &nbsp
         <input type="radio" name="number" value="twoBoth"> Two (Both) &nbsp
       </form>
-    </div>
+      <br />
+      </div>
 	  <div class="col-md-4">
       <h3> Include Special Char? </h3>
       <h5>(OPTIONAL)</h5>
@@ -71,7 +72,8 @@
   <hr />
   <div class="row">
 	  <div class="col-md-12">
-      <h3>Password Output</h3>
+      <input type="button" id="submitbutton" value="GENERATE">
+      <br />
       <div id="passoutput"> <h3>[Password will update here]</h3> </div>
 	  </div>
   </div>

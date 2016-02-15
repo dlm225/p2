@@ -19,6 +19,7 @@ h1,h3,h5{
 
 #passoutput{
   width: 50%;
+  padding: 2px;
   margin: 0 auto;
   background:lightgray;
   border-radius: 10px;
@@ -149,4 +150,12 @@ input[type=range]:focus::-ms-fill-upper {
   border: 0;
   display: block;
   margin: 0 auto;
+}
+
+#submitbutton{
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-weight: bold;
+  background: lightblue;
 }
