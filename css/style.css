@@ -132,7 +132,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 0 auto;
 }
 
-#addnumbers{
+.form1{
   text-align:center;
   font-size: 1em;
   font-weight: bold;
@@ -142,14 +142,8 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 0 auto;
 }
 
-#addspecchar{
-  text-align:center;
-  font-size: 1em;
-  font-weight: bold;
-  color: gray;
-  border: 0;
-  display: block;
-  margin: 0 auto;
+.form1 h3{
+  color:black;
 }
 
 #submitbutton{

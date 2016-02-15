@@ -39,32 +39,30 @@
 	</div>
 
 	<div class="row">
-	  <div class="col-md-4">
-      <h3> Word Count </h3>
-      <br />
-      <input type="range" name="rangeInput" min="3" max="9" value="4" onchange="updateTextInput(this.value);">
-      <br />
-      <input type="text" id="textInput" value="4">
-    </div>
-	  <div class="col-md-4">
-      <h3> Include Number? </h3>
-      <h5> (OPTIONAL) </h5>
-      <form id="genform">
-        <input type="radio" name="number" value="none" checked> None &nbsp
-        <input type="radio" name="number" value="oneBefore"> One (Before) &nbsp
-        <input type="radio" name="number" value="oneAfter"> One (After) &nbsp
-        <input type="radio" name="number" value="twoBoth"> Two (Both) &nbsp
-      </form>
+    <form id="genform" class="form1" action="logic.php" method="get">
+      <div class="col-md-4">
+        <h3> Word Count </h3>
+        <br />
+        <input type="range" name="rangeInput" min="3" max="9" value="4" onchange="updateTextInput(this.value);" form="genform">
+        <br />
+        <input type="text" id="textInput" value="4">
+      </div>
+	     <div class="col-md-4">
+         <h3> Include Number? </h3>
+         <h5> (OPTIONAL) </h5>
+         <input type="radio" name="number" value="none" checked> None &nbsp
+         <input type="radio" name="number" value="before"> One (Before) &nbsp
+         <input type="radio" name="number" value="after"> One (After) &nbsp
+         <input type="radio" name="number" value="two"> Two (Both) &nbsp
       <br />
       </div>
 	  <div class="col-md-4">
       <h3> Include Special Char? </h3>
       <h5>(OPTIONAL)</h5>
-      <form id="genform">
         <input type="radio" name="specchar" value="none" checked> None &nbsp
-        <input type="radio" name="specchar" value="oneBefore"> One (Before) &nbsp
-        <input type="radio" name="specchar" value="oneAfter"> One (After) &nbsp
-        <input type="radio" name="specchar" value="twoBoth"> Two (Both) &nbsp
+        <input type="radio" name="specchar" value="before"> One (Before) &nbsp
+        <input type="radio" name="specchar" value="after"> One (After) &nbsp
+        <input type="radio" name="specchar" value="two"> Two (Both) &nbsp
       </form>
     </div>
   </div>
@@ -72,11 +70,11 @@
   <hr />
   <div class="row">
 	  <div class="col-md-12">
-      <form id="genform" action="logic.php" method="get">
-        <input type="submit" id="submitbutton" value="GENERATE">
-      </form>
+      <input type="submit" name="submitbutton" id="submitbutton" value="GENERATE" form="genform">
       <br />
-      <div id="passoutput"> <h3>[Password will update here]</h3> </div>
+      <div id="passoutput">
+        <h3>[Password will update here]</h3>
+      </div>
 	  </div>
   </div>
 
