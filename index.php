@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+    <title>High-Entropy Password Generator</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -18,43 +18,54 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <script type="text/javascript">
+      function updateTextInput(val) {
+        document.getElementById('textInput').value=val;
+      }
+    </script>
+
   </head>
-  <body>
+
+<body>
 
 <?php include 'header.php'; ?>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<h3 class="text-center">
-				h3. Lorem ipsum dolor sit amet.
-			</h3>
-		</div>
-		<div class="col-md-4">
-			<h3>
-				h3. Lorem ipsum dolor sit amet.
-			</h3>
-		</div>
-		<div class="col-md-4">
-			<h3>
-				h3. Lorem ipsum dolor sit amet.
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-		</div>
-	</div>
-</div>
+<div class="container-fluid">
 
+  <div class="row row1">
+    <div class="col-md-12 vertmiddle">
+      <h1>High-Entropy Password Generator</h1>
+    </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-4">
+      <h3> Word Count </h3>
+      <br />
+      <input type="range" name="rangeInput" min="3" max="9" value="4" onchange="updateTextInput(this.value);">
+      <br />
+      <input type="text" id="textInput" value="4">
+    </div>
+	  <div class="col-md-4"> <h3> Include Number? </h3><h5>(OPTIONAL)</h5> </div>
+	  <div class="col-md-4"> <h3> Include Special Char? </h3> <h5>(OPTIONAL)</h5> </div>
+  </div>
+
+  <hr />
+  <div class="row">
+	  <div class="col-md-12">
+      <h3>Password Output</h3>
+      <div id="passoutput"> <h3>[Password will update here]</h3> </div>
+	  </div>
+  </div>
+
+</div>
+<hr />
 <?php include 'footer.php'; ?>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+
+</body>
+
 </html>
