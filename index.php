@@ -46,8 +46,26 @@
       <br />
       <input type="text" id="textInput" value="4">
     </div>
-	  <div class="col-md-4"> <h3> Include Number? </h3><h5>(OPTIONAL)</h5> </div>
-	  <div class="col-md-4"> <h3> Include Special Char? </h3> <h5>(OPTIONAL)</h5> </div>
+	  <div class="col-md-4">
+      <h3> Include Number? </h3>
+      <h5> (OPTIONAL) </h5>
+      <form id="addnumbers">
+        <input type="radio" name="number" value="none" checked> None &nbsp
+        <input type="radio" name="number" value="oneBefore"> One (Before) &nbsp
+        <input type="radio" name="number" value="oneAfter"> One (After) &nbsp
+        <input type="radio" name="number" value="twoBoth"> Two (Both) &nbsp
+      </form>
+    </div>
+	  <div class="col-md-4">
+      <h3> Include Special Char? </h3>
+      <h5>(OPTIONAL)</h5>
+      <form id="addspecchar">
+        <input type="radio" name="specchar" value="none" checked> None &nbsp
+        <input type="radio" name="specchar" value="oneBefore"> One (Before) &nbsp
+        <input type="radio" name="specchar" value="oneAfter"> One (After) &nbsp
+        <input type="radio" name="specchar" value="twoBoth"> Two (Both) &nbsp
+      </form>
+    </div>
   </div>
 
   <hr />
