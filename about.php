@@ -21,4 +21,4 @@
 
 <?php $current='about'; include "header.php" ?>
 
- This is text.
+ This is what text.

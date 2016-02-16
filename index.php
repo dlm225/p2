@@ -36,9 +36,10 @@
   <div class="row row1">
     <div class="col-md-12 vertmiddle">
       <h1>High-Entropy Password Generator</h1>
+      <h5>An XKCD Cartoon Inspired Web Tool</h5>
     </div>
 	</div>
-
+  <hr />
 	<div class="row">
     <form id="genform" class="form1" action="index.php" method="post">
       <div class="col-md-4">
@@ -85,7 +86,6 @@
   </div>
 
 </div>
-<hr />
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

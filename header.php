@@ -7,8 +7,9 @@
 					else print("<li>"); ?>
 					<a href="index.php">Home</a>
 				</li>
-				<li>
-					<a href="#">What is This Site?</a>
+				<?php if($current=='what') print("<li class='active'>");
+					else print("<li>"); ?>
+					<a href="what.php">What is This Site?</a>
 				</li>
 				<?php if($current=='about') print("<li class='active'>");
 					else print("<li>"); ?>
