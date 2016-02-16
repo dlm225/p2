@@ -28,7 +28,7 @@
 
 <body>
 
-<?php include 'header.php'; ?>
+<?php $current='home'; include 'header.php'; ?>
 <?php include 'logic.php'; ?>
 
 <div class="container-fluid">
