@@ -29,6 +29,7 @@
 <body>
 
 <?php include 'header.php'; ?>
+<?php include 'logic.php'; ?>
 
 <div class="container-fluid">
 
@@ -39,11 +40,11 @@
 	</div>
 
 	<div class="row">
-    <form id="genform" class="form1" action="logic.php" method="get">
+    <form id="genform" class="form1" action="index.php" method="post">
       <div class="col-md-4">
         <h3> Word Count </h3>
         <br />
-        <input type="range" name="rangeInput" min="3" max="9" value="4" onchange="updateTextInput(this.value);" form="genform">
+        <input type="range" name="numwords" min="3" max="9" value="4" onchange="updateTextInput(this.value);" form="genform">
         <br />
         <input type="text" id="textInput" value="4">
       </div>
@@ -73,7 +74,12 @@
       <input type="submit" name="submitbutton" id="submitbutton" value="GENERATE" form="genform">
       <br />
       <div id="passoutput">
-        <h3>[Password will update here]</h3>
+        <?php
+          if ($_POST)
+            print("<h3 id='generatedpassword'>".$generatedpassword."</h3>");
+          else
+            print("<h3 id='generatedpassword'>[Password will update here]</h3>");
+        ?>
       </div>
 	  </div>
   </div>
