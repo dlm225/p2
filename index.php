@@ -56,19 +56,19 @@
 	        <div class="col-md-4">
                 <h3> Include Number? </h3>
                 <h5> (OPTIONAL) </h5>
-                <input type="radio" name="number" value="none" checked> None &nbsp
-                <input type="radio" name="number" value="before"> One (Before) &nbsp
-                <input type="radio" name="number" value="after"> One (After) &nbsp
-                <input type="radio" name="number" value="two"> Two (Both) &nbsp
+                <input type="radio" name="number" value="none" checked> None &nbsp;
+                <input type="radio" name="number" value="before"> One (Before) &nbsp;
+                <input type="radio" name="number" value="after"> One (After) &nbsp;
+                <input type="radio" name="number" value="two"> Two (Both) &nbsp;
                 <br />
             </div>
 	        <div class="col-md-4">
                 <h3> Include Special Char? </h3>
                 <h5>(OPTIONAL)</h5>
-                <input type="radio" name="specchar" value="none" checked> None &nbsp
-                <input type="radio" name="specchar" value="before"> One (Before) &nbsp
-                <input type="radio" name="specchar" value="after"> One (After) &nbsp
-                <input type="radio" name="specchar" value="two"> Two (Both) &nbsp
+                <input type="radio" name="specchar" value="none" checked> None &nbsp;
+                <input type="radio" name="specchar" value="before"> One (Before) &nbsp;
+                <input type="radio" name="specchar" value="after"> One (After) &nbsp;
+                <input type="radio" name="specchar" value="two"> Two (Both) &nbsp;
             </div>
             </form>
         </div>
