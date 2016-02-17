@@ -31,7 +31,12 @@
 	        </div>
             <br />
             <div class="row">
-                <h5>test</h5>
+                <h3>Credits:</h3>
+                <div class="colmd6custom">
+                    Bootstrap framework courtesy of http://layoutit.com <br />
+                    Form range/thumb css courtesy of https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ <br />
+                    Cartoon graphic courtesy of XKCD Comics at http://www.xkcd.com <br />
+                </div>
             </div>
         </div>
     </body>
