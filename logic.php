@@ -13,10 +13,9 @@
 
         if (($numwords < 1) || ($numwords > 9) || (is_int($number)=="false")) {
 ?>
-
-    <script type="text/javascript">
-        window.location.href = '/hacker.php';
-    </script>
+            <script type="text/javascript">
+                window.location.href = '/hacker.php';
+            </script>
 <?php } ?>
 
 <?php
