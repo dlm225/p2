@@ -17,3 +17,4 @@ No login required.
 
 * Bootstrap v3.3.5: customized code pulled from http://www.layoutit.com/build
 * CSS to create the track/thumb that selects the number of words from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+* CSS/HTML to create the expandable section from http://v4-alpha.getbootstrap.com/components/collapse/

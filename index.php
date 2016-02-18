@@ -29,12 +29,13 @@
 
 <body>
 
+    <!-- identify index page as 'home' for css tab and load header -->
     <?php $current='home'; include 'header.php'; ?>
 
     <?php include 'logic.php'; ?>
 
+    <!-- setup bootstrap framework -->
     <div class="container-fluid">
-
         <div class="row row1">
             <div class="col-md-12 vertmiddle">
                 <h1>High-Entropy Password Generator</h1>
@@ -45,6 +46,8 @@
         <hr />
 
 	    <div class="row">
+            <!-- start form and create responsive columns within
+            form recursively loads itself using POST for better security -->
             <form id="genform" class="form1" action="index.php" method="post">
             <div class="col-md-4">
                 <h3> Word Count </h3>
@@ -76,6 +79,7 @@
 
         <hr />
         <div class="row">
+            <!-- create expandable "advanced" section -->
             <div id="accordion2" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -100,6 +104,7 @@
 	        <div class="col-md-12">
                 <input type="submit" name="submitbutton" id="submitbutton" value="GENERATE" form="genform">
                 <br />
+                <!-- use css div's to separate and draw attention to the password generation location -->
                 <div id="passoutput">
                     <?php
                         if ($_POST)

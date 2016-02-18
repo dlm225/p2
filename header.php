@@ -1,3 +1,5 @@
+<!--header uses bootstrap css for active tabs
+uses logic on each page to store 'active' page in "$current" variable -->
 <div class="row">
 	<div class="col-md-12">
 		<ul class="nav nav-tabs">

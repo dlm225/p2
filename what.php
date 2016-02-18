@@ -75,7 +75,7 @@
                 <h3>Inspiration - The Cartoon Strip</h3>
                 <h5>Click to see full-size: <a href="http://imgs.xkcd.com/comics/password_strength.png">
                     http://imgs.xkcd.com/comics/password_strength.png</a></h5>
-                    <img id="comic" src="http://imgs.xkcd.com/comics/password_strength.png" />
+                    <img id="comic" src="http://imgs.xkcd.com/comics/password_strength.png" alt="XKCD comic strip explaining high entropy passwords using common words"/>
             </div>
 	    </div>
     </div>

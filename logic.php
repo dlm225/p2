@@ -6,6 +6,7 @@
 <?php
     if ($_POST)
     {
+        #pull form elements from index.php
         $numwords = $_POST['numwords'];
         $number = $_POST['number'];
         $specchar = $_POST['specchar'];
@@ -14,12 +15,14 @@
 
         if (($numwords < 1) || ($numwords > 9) || (is_int($number)=="false")) {
 ?>
+            <!-- If number of words field is tampered with, send user to hacker page -->
             <script type="text/javascript">
                 window.location.href = '/hacker.php';
             </script>
 <?php } ?>
 
 <?php
+    #use logic to select user defined language setting - english is default
     if($language == "english")
     {
         $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
@@ -74,11 +77,13 @@
     }
     else {
     ?>
+        <!-- fail over to hacker page if language field is tampered with -->
         <script type="text/javascript">
             window.location.href = '/hacker.php';
         </script>
     <?php }
 
+    #multiple if statements to generate numbers and special characters
     $generatedpassword = "";
     if (($number == "before") || ($number == "two"))
         $generatedpassword = $generatedpassword.rand(0,99);

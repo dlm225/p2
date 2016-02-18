@@ -36,6 +36,7 @@
                     Bootstrap framework courtesy of http://layoutit.com <br />
                     Form range/thumb css courtesy of https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ <br />
                     Cartoon graphic courtesy of XKCD Comics at http://www.xkcd.com <br />
+                    Bootstrap html/css code for expandable section at http://v4-alpha.getbootstrap.com/components/collapse/ <br />
                 </div>
             </div>
         </div>
