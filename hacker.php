@@ -9,6 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Refresh" content="3; url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
 
         <title>High-Entropy Password Generator</title>
 
@@ -30,11 +31,4 @@
         <h3>Stop hacking me bro....</h3>
         <br />
         <h3>Redirecting...</h3>
-        <script>
-            setTimout(redirect, 500);
-            function redirect()
-            {
-                window.location.replace()"https://www.youtube.com/watch?v=oHg5SJYRHA0");
-            }
-        </script>
     </div>
