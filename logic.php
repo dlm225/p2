@@ -9,6 +9,7 @@
         $numwords = $_POST['numwords'];
         $number = $_POST['number'];
         $specchar = $_POST['specchar'];
+        $language = $_POST['lang'];
         $specchararray = ["!","@","#","$","%","^","&","*"];
 
         if (($numwords < 1) || ($numwords > 9) || (is_int($number)=="false")) {
@@ -19,16 +20,64 @@
 <?php } ?>
 
 <?php
-    $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
-    $filename = $DOCUMENT_ROOT.'/wordlist.txt';
-    $lines_in_file = count(file($filename));
-    $fp = fopen($filename, 'r');
-    for ($ii = 1; $ii <= $lines_in_file; $ii++)
+    if($language == "english")
     {
-        $line = fgets($fp);
-        $wordarray[$ii] = trim($line);
+        $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+        $filename = $DOCUMENT_ROOT.'/wordlist.txt';
+        $lines_in_file = count(file($filename));
+        $fp = fopen($filename, 'r');
+        for ($ii = 1; $ii <= $lines_in_file; $ii++)
+        {
+            $line = fgets($fp);
+            $wordarray[$ii] = trim($line);
+        }
+        fclose($fp);
     }
-    fclose($fp);
+    else if ($language == "spanish")
+    {
+        $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+        $filename = $DOCUMENT_ROOT.'/spanish.txt';
+        $lines_in_file = count(file($filename));
+        $fp = fopen($filename, 'r');
+        for ($ii = 1; $ii <= $lines_in_file; $ii++)
+        {
+            $line = fgets($fp);
+            $wordarray[$ii] = trim($line);
+        }
+        fclose($fp);
+    }
+    else if ($language == "french")
+    {
+        $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+        $filename = $DOCUMENT_ROOT.'/french.txt';
+        $lines_in_file = count(file($filename));
+        $fp = fopen($filename, 'r');
+        for ($ii = 1; $ii <= $lines_in_file; $ii++)
+        {
+            $line = fgets($fp);
+            $wordarray[$ii] = trim($line);
+        }
+        fclose($fp);
+    }
+    else if ($language == "german")
+    {
+        $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+        $filename = $DOCUMENT_ROOT.'/german.txt';
+        $lines_in_file = count(file($filename));
+        $fp = fopen($filename, 'r');
+        for ($ii = 1; $ii <= $lines_in_file; $ii++)
+        {
+            $line = fgets($fp);
+            $wordarray[$ii] = trim($line);
+        }
+        fclose($fp);
+    }
+    else {
+    ?>
+        <script type="text/javascript">
+            window.location.href = '/hacker.php';
+        </script>
+    <?php }
 
     $generatedpassword = "";
     if (($number == "before") || ($number == "two"))

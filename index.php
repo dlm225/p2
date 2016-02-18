@@ -75,7 +75,27 @@
 
 
         <hr />
-
+        <div class="row">
+            <div id="accordion2" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Advanced Features (+)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <h5>Pick a language:</h5>
+                        <input type="radio" name="lang" value="english" form="genform" checked> English &nbsp;
+                        <input type="radio" name="lang" value="french" form="genform"> French &nbsp;
+                        <input type="radio" name="lang" value="spanish" form="genform"> Spanish &nbsp;
+                        <input type="radio" name="lang" value="german" form="genform"> German &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
         <div class="row">
 	        <div class="col-md-12">
                 <input type="submit" name="submitbutton" id="submitbutton" value="GENERATE" form="genform">

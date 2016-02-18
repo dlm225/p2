@@ -195,3 +195,11 @@ input[type=range]:focus::-ms-fill-upper {
     background: red;
     height: 20%;
 }
+
+#accordion2{
+    width: 30em;
+    padding: 2px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
